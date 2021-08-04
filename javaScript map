@@ -1,6 +1,7 @@
 const ourarray=[1,2,3,4,5];
-const newarray = ourarray.map((data) =>
- {return data + 10;
+const newarray = ourarray.map(function(data)  {
+  return data + 10;
 });
-console.log(ourarray);
+
 console.log(newarray);
+console.log(ourarray);
