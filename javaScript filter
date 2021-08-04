@@ -1,5 +1,5 @@
 const ourarray=[1,2,3,4,5];
-const newarray = ourarray.filter((data) => {
+const newarray = ourarray.filter(function(data)  {
   return data <=3;
 });
 
