@@ -1,0 +1,8 @@
+const ourarray=[1,2,3,4,5];
+const newarray=ourarray.reduce(function(accumulator,currentVal){
+  return accumulator+currentVal;
+},0);
+console.log(newarray);
+console.log(ourarray);
+
+
