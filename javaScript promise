@@ -1,0 +1,9 @@
+const concert=true;
+const attendconcert= new Promise((resolve,reject) => {
+  setTimeout(() => {
+    if (concert) resolve("we did attend the concert");
+    else reject ("we failed attend the concert");
+  })
+});
+attendconcert;
+attendconcert
