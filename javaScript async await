@@ -1,0 +1,16 @@
+const concert=false;
+const attendconcert= new Promise((resolve,reject) => {
+  setTimeout(() => {
+    if (concert) resolve("we did attend the concert");
+    else reject ("we failed attend the concert");
+  })
+});
+//then&catch
+attendconcert.then((dataa) => console.log(dataa))
+.catch((data) => console.log(data));
+
+const getconcertresult= async ()=>{
+  const getresult=await attendconcert;
+  console.log(getresult); 
+}
+getconcertresult();
