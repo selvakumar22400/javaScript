@@ -17,3 +17,24 @@ console.log("the End")
  count: 2
  count: 1
  the End*/
+
+
+
+ count = 10;
+while(count > 0){
+  console.log("count:" , --count);
+};
+console.log("the End")
+
+
+ /*count: 9
+ count: 8
+ count: 7
+ count: 6
+ count: 5
+ count: 4
+ count: 3
+ count: 2
+ count: 1
+ count: 0
+ the End*/
