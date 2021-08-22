@@ -1,4 +1,4 @@
-/*for(initializecounter ; condition ; incrementcount ){
+*for(initializecounter ; condition ; incrementcount ){
   block of statement
 }*/
 
