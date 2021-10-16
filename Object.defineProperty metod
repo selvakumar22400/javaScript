@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var employee = {};
+        employee.name="selvakumar";
+        employee.designation="devolper";
+        employee.salary=45000;
+        console.log(employee);
+        employee.name="selva";
+        console.log(employee);
+
+
+        
+        Object.defineProperty(employee,'name',{
+            configurable:true,
+            enumarable:true,
+            writeable:false      
+        });
+        employee.name="selva    kumar";
+        console.log(employee);
+
+        var employee3={};
+        Object.defineProperty(employee3,'name',{
+            configurable:true,
+            enumerable:true,
+            writable:false ,
+            value:"selvakumar"      
+        });
+        employee3.designation="devolper";
+        employee3.salary=30000;
+        console.log(employee3);
+        employee3.name="kumar";
+        console.log(employee3.name);
+        for(prop in employee){
+            console.log(prop,employee3[prop]);
+        }
+        Object.defineProperty(employee3,'salary',{
+            configurable:true,
+            enumerable:false,
+            writable:false
+            
+        });
+        for (prop in employee3) {
+            console.log(prop,employee3[prop]);
+        };
+       
+      
+    </script>
+</head>
+<body>
+    <h1 style="color: red;">javascript object.defineProperty</h1>
+</body>
+</html>
