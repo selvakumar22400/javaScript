@@ -1,0 +1,198 @@
+JavaScript Display Possibilities
+JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+using innerHTML.
+the innerHTML property of an HTML element is a common way to display data in HTML.
+
+Using document.write()
+For testing purposes, it is convenient to use document.write():
+  Using document.write() after an HTML document is loaded, will delete all existing HTML:
+  The document.write() method should only be used for testing.
+  
+Using window.alert()
+You can use an alert box to display data:
+
+Using console.log()
+For debugging purposes, you can call the console.log() method in the browser to display data.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+STATEMENTS
+
+let x, y, z;    // Statement 1
+x = 5;          // Statement 2
+y = 6;          // Statement 3
+z = x + y;      // Statement 4
+programming instructions are called statements.
+
+
+Semicolons separate JavaScript statements.
+Add a semicolon at the end of each executable statement:
+
+Examples
+let a, b, c;  // Declare 3 variables
+a = 5;        // Assign the value 5 to a
+b = 6;        // Assign the value 6 to b
+c = a + b;    // Assign the sum of a and b to c
+
+
+
+Keyword	  Description
+var      	Declares a variable
+let   	  Declares a block variable
+const 	  Declares a block constant
+if	      Marks a block of statements to be executed on a condition
+switch	  Marks a block of statements to be executed in different cases
+for	      Marks a block of statements to be executed in a loop
+function	Declares a function
+return	  Exits a function
+try	      Implements error handling to a block of statements
+
+
+<p id="demo"></p>
+<script>
+var carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+</script>
+It's a good programming practice to declare all variables at the beginning of a script.
+
+
+
+Re-Declaring JavaScript Variables
+If you re-declare a JavaScript variable, it will not lose its value.
+The variable carName will still have the value "Volvo" after the execution of these statements:
+Example
+var carName = "Volvo";
+var carName;
+
+
+Variables defined with let cannot be redeclared.
+You cannot accidentally redeclare a variable.
+With let you can not do this:
+
+Example
+let x = "John Doe";
+
+let x = 0;
+
+// SyntaxError: 'x' has already been declared
+
+===================================================================================================================================================================================
+
+
+Block Scope
+Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+ES6 introduced two important new JavaScript keywords: let and const.
+These two keywords provide Block Scope in JavaScript.
+Variables declared inside a { } block cannot be accessed from outside the block:
+Example
+{
+  let x = 2;
+}
+// x can NOT be used here
+
+
+
+Variables declared with the var keyword can NOT have block scope.
+Variables declared inside a { } block can be accessed from outside the block.
+
+Example
+{
+  var x = 2;
+}
+// x CAN be used here
+
+Redeclaring Variables
+Redeclaring a variable using the var keyword can impose problems.
+
+Redeclaring a variable inside a block will also redeclare the variable outside the block:
+
+
+
+
+A const variable cannot be reassigned:
+JavaScript const variables must be assigned a value when they are declared:
+Example
+const PI = 3.141592653589793;
+PI = 3.14;      // This will give an error
+PI = PI + 10;   // This will also give an error
+
+Constant Objects and Arrays
+The keyword const is a little misleading.
+It does not define a constant value. It defines a constant reference to a value.
+
+Because of this you can NOT:
+    Reassign a constant value
+    Reassign a constant array
+    Reassign a constant object
+    
+But you CAN:
+
+    Change the elements of constant array
+    Change the properties of constant object
+    Constant Arrays
+    You can change the elements of a constant array:
+
+Example
+      // You can create a constant array:
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      // You can change an element:
+      cars[0] = "Toyota";
+
+      // You can add an element:
+      cars.push("Audi");
+
+But you can NOT reassign the array:
+      Example
+      const cars = ["Saab", "Volvo", "BMW"];
+      cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+      {
+
+Constant Objects:
+
+You can change the properties of a constant object:
+      Example
+      // You can create a const object:
+      const car = {type:"Fiat", model:"500", color:"white"};
+
+      // You can change a property:
+      car.color = "red";
+
+      // You can add a property:
+      car.owner = "Johnson";
+But you can NOT reassign the object:
+      Example
+      const car = {type:"Fiat", model:"500", color:"white"};
+
+      car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
+
+
+============================================================================================================================================================================
+
+x ** y produces the same result as Math.pow(x,y):
+
+Example
+let x = 5;
+let z = Math.pow(x,2);   // result is 25
+
+
+DATA TYPES;
+
+let length = 16;                               // Number
+let lastName = "Johnson";                      // String
+let x = {firstName:"John", lastName:"Doe"};    // Object
+
+=>let x = "16" + "Volvo";
+When adding a number and a string, JavaScript will treat the number as a string.
+
+
+let x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
