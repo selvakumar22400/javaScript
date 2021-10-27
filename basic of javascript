@@ -196,3 +196,32 @@ let x;           // Now x is undefined
 x = 5;           // Now x is a Number
 x = "John";      // Now x is a String
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The typeof operator returns the type of a variable or an expression:
+
+Example
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"     // Returns "string"
+
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+typeof (3 + 4)        // Returns "number"
+
+let car;    // Value is undefined, type is undefined
+
+car = undefined;    // Value is undefined, type is undefined
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+=>JavaScript Functions
+
+A JavaScript function is a block of code designed to perform a particular task.
+A JavaScript function is executed when "something" invokes it (calls it).
+
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
