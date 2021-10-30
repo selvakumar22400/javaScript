@@ -14,15 +14,27 @@ JavaScript Array Methods
       .unshift() : The unshift() method adds a new element to an array (at the beginning),       
       .join()    : method also joins all array elements into a string //fruits.join(" * ") ,Banana * Orange * Apple * Mango
        Delete    : elements can be deleted by using the JavaScript operator delete  
-       .splice   : The splice() method can be used to add new items to an array
+      .splice    : The splice() method can be used to add new items to an array
                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
                        fruits.splice(2, 2, "Lemon", "Kiwi");
-                       result : Banana,Orange,Lemon,Kiwi
+                        result : Banana,Orange,Lemon,Kiwi
                        first parameter (2) defines the position where new elements should be added (spliced in).
                        The second parameter (2) defines how many elements should be removed.
-      .concat() : The concat() method creates a new array by merging (concatenating) existing arrays:
-                   syntax; 
-                          newArray = Arrayname1.concat(Arrayname2);//merge two array  
+       slice()   : The slice() method slices out a piece of an array into a new array.       
+                   const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+                   const citrus = fruits.slice(1); //result : Orange,Lemon,Apple,Mango
+                   The slice() method creates a new array. It does not remove any elements from the source array.                                  
+                   The slice() method can take two arguments like slice(1, 3). //it select the 2nd and 3rd element
+                 
+      .concat()  : The concat() method creates a new array by merging (concatenating) existing arrays:  
+                   syntax;newArray = Arrayname1.concat(Arrayname2);//merge two array  
                           myChildren = array1.concat(array2, array3);//merge three array 
-                          It always returns a new array.
+                          It always returns a new array. 
+                               
+      .sort()    : The sort() method sorts an array alphabetically:
+      .reverse() : The reverse() method reverses the elements in an array.
+     Numeric Sort
+      .sort(function(a, b){return a - b}):By default, the sort() function sorts values as strings.
+      .sort(function(a, b){return b - a})
+                 
                  
