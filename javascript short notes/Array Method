@@ -13,7 +13,7 @@ JavaScript Array Methods
       .push()    : the push() method adds a new element to an array (at the end):
       .unshift() : The unshift() method adds a new element to an array (at the beginning),       
       .join()    : method also joins all array elements into a string //fruits.join(" * ") ,Banana * Orange * Apple * Mango
-       Delete    : elements can be deleted by using the JavaScript operator delete  
+       Delete    : elements can be deleted by using the JavaScript operator delete  //delete fruits[0]
       .splice    : The splice() method can be used to add new items to an array
                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
                        fruits.splice(2, 2, "Lemon", "Kiwi");
