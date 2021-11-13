@@ -1,0 +1,13 @@
+node js - runtime environmental
+          runtime - program in exceute
+          environmental - place to excecute something 
+          
+node js is not a language
+node js used backend or  serverside application
+
+express js - light weight web framework for node js ( 30kb )
+ jason format
+{
+__ : __
+__ : __
+}
